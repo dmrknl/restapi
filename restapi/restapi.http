@@ -1,0 +1,6 @@
+@restapi_HostAddress = http://localhost:5198
+
+GET {{restapi_HostAddress}}/Customer/
+Accept: application/json
+
+###
