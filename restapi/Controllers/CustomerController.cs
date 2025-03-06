@@ -17,11 +17,10 @@ public class CustomerController : ControllerBase
         var a = DBHelper.GetCustomer(id);
 
         if (a is null)
-        return NotFound();
+            return NotFound();
 
         return Ok(a);
     }
-
     [HttpPost]
     public IActionResult PostCustomer([FromBody] Customer customer)
     {
